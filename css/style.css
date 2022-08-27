@@ -1,8 +1,8 @@
 body{
 	background: url("../images/bg2.gif");
 	background-color: #000;
-	background-repeat: no-repeat;
-	background-size: 100%;
+	/*background-repeat: no-repeat;*/
+	/*background-size: 100%;*/
 }
 
 .center {
