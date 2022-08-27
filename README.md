@@ -1,2 +1,3 @@
 # fishing_test
-fishing with html and python.
+link https://dretcm.github.io/FreeFireFishing/
+or click <a href="https://dretcm.github.io/FreeFireFishing/">here</a>.
