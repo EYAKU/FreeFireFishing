@@ -1,0 +1,76 @@
+body{
+	background: url("../images/bg2.gif");
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.center {
+	text-align: center;
+}
+
+.form-register-products{
+	opacity: 0.9;
+	width: 400px;
+	background: #24303c;
+	padding: 30px;
+	margin: auto;
+	margin-top: 70px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+}
+
+.form-register-products h4{
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.controls{
+	width: 100;
+	background: #FFF;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+	color: #000;
+}
+
+#email{
+	margin: 20px 10px 10px 10px;
+}
+
+.form-register-products p {
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.botons{
+	width: 15%;
+	background: #000;
+	padding: 5px;
+	color: white;
+	margin: 10px;
+	font-size: 16px;
+	border-color: rgb(57, 120, 255);
+}
+
+.form-register-products .botons{
+	width: 60%;
+	background: rgb(57, 120, 255);
+	padding: 12px;
+	color: white;
+	margin: 10px;
+	font-size: 16px;
+}
+
+.form-register-products .botons:hover, .botons:hover{
+	border-color: #FFF;
+}
+
+img{
+	margin-top: 20px;
+}
